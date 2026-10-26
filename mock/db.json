@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "demo@todo.app",
+      "password": "password",
+      "name": "Demo",
+      "settings": {
+        "theme": "light",
+        "emailNotifications": true
+      }
+    }
+  ],
+  "todos": [
+    {
+      "id": "1",
+      "title": "Изучить Vue 3",
+      "completed": true,
+      "createdAt": "2026-01-10T10:00:00.000Z",
+      "userId": 1
+    },
+    {
+      "id": "2",
+      "title": "Настроить Pinia store",
+      "completed": false,
+      "createdAt": "2026-01-11T12:30:00.000Z",
+      "userId": 1
+    }
+  ]
+}

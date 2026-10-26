@@ -1,0 +1,26 @@
+{
+  "extends": "./.quasar/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@": ["./src"],
+      "@/*": ["./src/*"],
+      "src": ["./src"],
+      "src/*": ["./src/*"],
+      "#q-app": ["./node_modules/@quasar/app-vite/types/index.d.ts"],
+      "#q-app/client": ["./node_modules/@quasar/app-vite/exports/client/client.d.ts"],
+      "#q-app/bex/background": [
+        "./node_modules/@quasar/app-vite/types/bex/entrypoints/background.d.ts"
+      ],
+      "#q-app/bex/content": ["./node_modules/@quasar/app-vite/types/bex/entrypoints/content.d.ts"],
+      "#q-app/bex/private/bex-bridge": [
+        "./node_modules/@quasar/app-vite/types/bex/bex-bridge.d.ts"
+      ],
+      "#q-app/electron/main": ["./node_modules/@quasar/app-vite/exports/electron/main-runtime.d.ts"],
+      "#q-app/electron/preload": [
+        "./node_modules/@quasar/app-vite/exports/electron/preload-runtime.d.ts"
+      ],
+      "#q-app/testing": ["./node_modules/@quasar/app-vite/exports/testing/testing.d.ts"],
+      "#q-app/capacitor": ["./node_modules/@quasar/app-vite/exports/capacitor/capacitor.d.ts"]
+    }
+  }
+}
